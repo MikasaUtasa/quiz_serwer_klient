@@ -28,7 +28,6 @@ int main(int argc, char *argv[])
     char buffer[256];
     char msg[256] = "Client Hello";
     char next[256] = "x";
-    char jebaccpp[256] = "5";
     char delim[] = "::";
     std::ostringstream ss;
     if (argc < 3)
@@ -77,12 +76,12 @@ int main(int argc, char *argv[])
             points_str = (char)points;
 
             std::string s = std::to_string(points);
-            char const *pchar = s.c_str();  //use char const* as target type
-
-            //std::cout << "W pretli koncowej" << std::endl;
-            ss << points;
-            //std::cout << points << std::endl;
-            //std::cout << pchar << std::endl;
+            chaoints << std::endl;
+            //std::cout <<r const *pchar = s.c_str();  //use char const* as target type
+            //
+            //            //std::cout << "W pretli koncowej" << std::endl;
+            //            ss << points;
+            //            //std::cout << p pchar << std::endl;
             write(sockfd, pchar, sizeof next);
             //write(sockfd, points_str.c_str(), points_str.size());
             read(sockfd, buffer, 255);
